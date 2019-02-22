@@ -1,0 +1,6 @@
+/Users/madelineplacik/Projects/ATM_Database/ATM_Database/obj/x86/Debug/ATM_Database.csprojAssemblyReference.cache
+/Users/madelineplacik/Projects/ATM_Database/ATM_Database/obj/x86/Debug/ATM_Database.csproj.CoreCompileInputs.cache
+/Users/madelineplacik/Projects/ATM_Database/ATM_Database/bin/Debug/ATM_Database.exe
+/Users/madelineplacik/Projects/ATM_Database/ATM_Database/bin/Debug/ATM_Database.pdb
+/Users/madelineplacik/Projects/ATM_Database/ATM_Database/obj/x86/Debug/ATM_Database.exe
+/Users/madelineplacik/Projects/ATM_Database/ATM_Database/obj/x86/Debug/ATM_Database.pdb
