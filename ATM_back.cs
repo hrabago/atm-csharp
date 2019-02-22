@@ -1,4 +1,3 @@
-using System;
 					
 public class Program
 {
@@ -6,7 +5,8 @@ public class Program
 	{
 		Console.WriteLine("Hello World");
 		
-		ATM myATM = new ATM("hector","password");
+        myusr = User("hector", "password")
+        ATM myATM = new ATM("hector","password");
 		
 		//double bal = myATM.getBalance();
 		
@@ -16,9 +16,8 @@ public class Program
 
 public class User{
 	
-	private String usr;
+	private String name;
     private String pw;
-	
 	private Double balance;
 
 	public User(String user, String password){
@@ -40,6 +39,12 @@ public class User{
 
       }
 
+    public void addToBalance(Double deposit_amount)
+    {
+        balance = balance + deposit_amount;
+
+    }
+
 }
 
 public class ATM
@@ -47,7 +52,7 @@ public class ATM
 	
 
 
-        private String usr;
+        private User usr;
         private String pw;
 		private User Usr;
 	
@@ -57,42 +62,51 @@ public class ATM
 		private int bills_20 = 500;
 		private int bills_50 = 0;
 		private int bills_100 = 0;
-	
-	
-        public ATM(String user, String password){
-            //constructor
-
-            //sample usr
-
-            usr = user;
-            pw = password;
-		
 
 
-			Usr = new User(usr,pw);
+        //private int total = bills_1 ... 
+
+
+        //User constructor
+        public ATM(){
+            //User constructor
 			
 			
 			
         }
 
-        public void login(){
+        public ATM(User user)
+        {
+        //User constructor
+
+
+        // load database from csv file
+
+
+
+        }
+
+        //String constructor
+
+        public void login(User user)
+        {
         
-        
+        // Authenticate user login
         
         }
         public void logout()
         {
 
-
+        // log-out
 
         }
 
 
         public double getBalance()
         {
+            return this.usr.getBalance();
 
-
-			return 0.00 ;
+			//return 0.00 ;
 
         }
         public void withdrawCash()
@@ -101,10 +115,29 @@ public class ATM
 
 
         }
-        public void depositFunds()
+        public void depositFunds(Double amount)
         {
-           // increase user balance
+        // increase user balance
 
+            //bills_100 += amount / 100 
+            //amount = amount / 100
+
+            //bills_50 += amount  50
+            //amount = amount % 50
+
+            //bills_20 += amount % 20
+            //amount = amount % 20
+
+            //bills_10 += amount % 10
+            //amount = amount % 10
+
+            //bills_5 += amount % 5
+            //amount = amount % 5
+
+            //bills_1 += amount 
+
+
+            this.usr.addToBalance(amount);
 
         }
 	
