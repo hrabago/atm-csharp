@@ -13,3 +13,15 @@ C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.csproj.CoreCompileInputs.cache
 C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.exe
 C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.pdb
 C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.VanishingScreen.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.csprojAssemblyReference.cache
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.Deposit.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.ShowBalance.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.TaskPage.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.VanishingScreen.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.Welcome.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.Properties.Resources.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.Withdraw.resources
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.csproj.GenerateResource.cache
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.csproj.CoreCompileInputs.cache
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.exe
+C:\Users\torna\Desktop\Columbia University\git_master\atm-csharp\ATM\ATM\obj\Debug\ATM.pdb
