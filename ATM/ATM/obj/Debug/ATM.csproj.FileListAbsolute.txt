@@ -1,0 +1,15 @@
+C:\Users\brown\source\repos\ATM\ATM\bin\Debug\ATM.exe.config
+C:\Users\brown\source\repos\ATM\ATM\bin\Debug\ATM.exe
+C:\Users\brown\source\repos\ATM\ATM\bin\Debug\ATM.pdb
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.csprojAssemblyReference.cache
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.Deposit.resources
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.ShowBalance.resources
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.TaskPage.resources
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.Welcome.resources
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.Properties.Resources.resources
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.Withdraw.resources
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.csproj.GenerateResource.cache
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.csproj.CoreCompileInputs.cache
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.exe
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.pdb
+C:\Users\brown\source\repos\ATM\ATM\obj\Debug\ATM.VanishingScreen.resources
