@@ -7,13 +7,13 @@ public class Program
 	{
 		// Frank: Create ATM object and populate with loggedOut clients
         ATM myATM = new ATM();
-		User userHector =  new User("hector", "password");
+		User userHector =  new User("hector", "passwordH");
+		User userFrank = new User("frank", "passwordF");
+		User userMaddy = new User("maddy", "passwordM")
 		 
 		myATM.addNewUser("hector", userHector);
-		
-		//double bal = myATM.getBalance();
-		
-		//Console.WriteLine(myATM.getBalance());
+		myATM.addNewUser("frank", userFrank);
+		myATM.addNewUser("maddy", userMaddy);
 	}
 }
 
@@ -71,14 +71,9 @@ public class ATM
 		private int bills_50 = 0;
 		private int bills_100 = 0;
 
-
-        //private int total = bills_1 ... 
-
-
         //User constructor
         public ATM(){
-            //User constructor
-			
+            //User constructor	
         }
 
 		public void addNewUser(string name, User user)
@@ -86,14 +81,10 @@ public class ATM
 			atmUsers.Add(name, user);	
 		}
 	
-
-        //String constructor
-
-        public void login(User user)
+		// Authenticate user login
+        public void login(String name, String password)
         {
-        
-        // Authenticate user login
-        
+        	currentUser = atmUsers[name];
         }
 	
 		// Clear current active user
