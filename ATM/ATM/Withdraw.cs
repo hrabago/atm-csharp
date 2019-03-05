@@ -12,14 +12,18 @@ namespace ATM
 {
     public partial class Withdraw : Form
     {
-        public Withdraw()
+
+        public ATM_Object myATM;
+        public Withdraw(ATM_Object theATM)
         {
             InitializeComponent();
+
+            myATM = theATM;
         }
 
         private void back_Click(object sender, EventArgs e)
         {
-            TaskPage tp = new TaskPage();
+            TaskPage tp = new TaskPage(myATM);
             tp.Show();
             this.Close();
         }
@@ -27,7 +31,7 @@ namespace ATM
         private void withdraw__Click(object sender, EventArgs e)
         {
             VanishingScreen vs = new VanishingScreen();
-            vs.
+            
             vs.Show();
             this.Close();
         }

@@ -6,10 +6,10 @@ public class Program
 	public static void Main()
 	{
 		// Frank: Create ATM object and populate with loggedOut clients
-        ATM myATM = new ATM();
+        ATM_Object myATM = new ATM_Object();
 		User userHector =  new User("hector", "passwordH");
 		User userFrank = new User("frank", "passwordF");
-		User userMaddy = new User("maddy", "passwordM")
+        User userMaddy = new User("maddy", "passwordM");
 		 
 		myATM.addNewUser("hector", userHector);
 		myATM.addNewUser("frank", userFrank);
@@ -59,7 +59,7 @@ public class User{
 
 }
 
-public class ATM
+public class ATM_Object
     {
         private Dictionary<string, User> atmUsers = new Dictionary<string, User>();
 		private User currentUser;
@@ -72,7 +72,7 @@ public class ATM
 		private int bills_100 = 0;
 
         //User constructor
-        public ATM(){
+        public ATM_Object(){
             //User constructor	
         }
 

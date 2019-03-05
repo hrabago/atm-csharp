@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ATM_Object.cs" />
     <Compile Include="Deposit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +65,7 @@
     <Compile Include="ShowBalance.Designer.cs">
       <DependentUpon>ShowBalance.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <Compile Include="VanishingScreen.cs">
       <SubType>Form</SubType>
     </Compile>
