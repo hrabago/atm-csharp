@@ -27,9 +27,17 @@ namespace ATM
         }
 
         // Authenticate user login
-        public void login(String name, String password)
+        public bool login(String name, String password)
         {
-            currentUser = atmUsers[name];
+            String hash = Database.GetStringSha256Hash(password);
+            if (hash.Equals(atmUsers[name].getPassword()))
+            {
+                currentUser = atmUsers[name];
+                return true;
+            } else
+            {
+                return false;
+            }
         }
 
         // Clear current active user

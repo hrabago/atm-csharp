@@ -15,10 +15,7 @@ namespace ATM
         ATM_Object myATM;
         public Welcome()
         {
-            myATM = new ATM_Object();
-            User userHector = new User("hector", "password");
-            myATM.addNewUser("hector", userHector);
-            myATM.login("hector", "password");
+            myATM = Database.loadUsersFromDatabase();
             this.IsMdiContainer = true;
             InitializeComponent();
 
@@ -28,8 +25,6 @@ namespace ATM
         {
             
         }
-
-       
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
@@ -43,11 +38,15 @@ namespace ATM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TaskPage tp = new TaskPage(myATM);
-           //this.Hide();
-            tp.Show();
-
-            MessageBox.Show("Hey Thief", "What you looking for?", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (myATM.login(this.textBox2.Text, this.textBox3.Text))
+            {
+                TaskPage tp = new TaskPage(myATM);
+                //this.Hide();
+                tp.Show();
+            } else
+            {
+                MessageBox.Show("Invalid Password", "Please Try Again", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

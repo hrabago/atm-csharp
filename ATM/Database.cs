@@ -3,9 +3,8 @@ using System.IO;
 using System.Security.Cryptography;
 
 
-namespace ATM
-{
-    public class Database
+
+    public class Program
     {
 
         //public StringBuilder csv = new StringBuilder();
@@ -31,7 +30,7 @@ namespace ATM
 
         public string FetchBalance(string filepath, string username, string password)
         {
-           
+
             using (StreamReader sr = new StreamReader(filepath))
             {
                 while ((line = sr.ReadLine()) != null)
@@ -46,28 +45,28 @@ namespace ATM
                         else
                         {
                             Console.WriteLine("wrong password");
-                            bal =  "wrong password";
+                            bal = "wrong password";
                         }
                     }
-                    Console.WriteLine("username does not exist";
-                    bal =  "username does not exist";
+                    Console.WriteLine("username does not exist");
+                    bal = "username does not exist";
                 }
             }
             return bal;
         }
 
-        public void UpdateBalance(string filepath,string username, string password, float balance)
+        public void UpdateBalance(string filepath, string username, string password, float balance)
         {
-          
+
 
             using (StreamReader sr = new StreamReader(filepath))
             {
-                while((line = sr.ReadLine())!= null)
+                while ((line = sr.ReadLine()) != null)
                 {
                     string[] data = line.Split(splitWith);
-                    if(data[0] == username)
+                    if (data[0] == username)
                     {
-                        if(data[1] == GetStringSha256Hash(password))
+                        if (data[1] == GetStringSha256Hash(password))
                         {
                             data[3] = balance.ToString();
                         }
@@ -114,5 +113,40 @@ namespace ATM
             }
         }
 
+        public static void Main(string[] args)
+        {
+
+            ////write to new file
+            //string path = "/Users/madelineplacik/Projects/database.txt";
+            //if (!File.Exists(path))
+            //{
+            //    //add username pw and balance
+            //    using (StreamWriter sw = File.CreateText(path))
+            //    {
+            //        sw.WriteLine("{Username, Password, Balance};");
+            //        sw.WriteLine("{" + userName + ", " + GetStringSha256Hash(passWord) + ", " + balance + "}; ");
+            //    }
+
+            //}
+
+            ////append to file that already exists
+            //if (File.Exists(path))
+            //{
+            //    //if username doesnt exist, add it 
+            //    using(StreamReader sr = new StreamReader(path))
+            //    {
+            //        string contents = sr.ReadToEnd();
+            //        if (!contents.Contains(userName))
+            //        {
+            //            using (StreamWriter sw = File.AppendText(path))
+            //            {
+            //                sw.WriteLine("{" + userName + ", " + GetStringSha256Hash(passWord) + ", " + balance + "}; ");
+            //            }
+            //        }
+
+            //    }
+
+            //}
+
+        }
     }
-}

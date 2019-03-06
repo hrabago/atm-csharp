@@ -12,16 +12,26 @@ namespace ATM
 {
     public partial class TaskPage : Form
     {
+        ATM_Object myATM;
+        public TaskPage(ATM_Object theATM)
+        {
+            myATM = theATM;
+            InitializeComponent();
+            
+        }
         public TaskPage()
         {
             InitializeComponent();
-        }
 
+        }
         private void viewBalance_Click(object sender, EventArgs e)
         {
-            ShowBalance sb = new ShowBalance();
+            ShowBalance sb = new ShowBalance(myATM);
+            sb.Owner = this;
+            //this.Visible = false;
+            //sb.ShowDialog();
             sb.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void TaskPage_Load(object sender, EventArgs e)
@@ -31,14 +41,14 @@ namespace ATM
 
         private void withdraw_Click(object sender, EventArgs e)
         {
-            Withdraw wd = new Withdraw();
+            Withdraw wd = new Withdraw(myATM);
             wd.Show();
             this.Close();
         }
 
         private void depositFunds_Click(object sender, EventArgs e)
         {
-            Deposit dp = new Deposit();
+            Deposit dp = new Deposit(myATM);
             dp.Show();
             this.Close();
         }

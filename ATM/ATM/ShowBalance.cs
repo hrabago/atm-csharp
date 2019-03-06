@@ -53,5 +53,10 @@ namespace ATM
 
             
         }
+
+        private void ShowBalance_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

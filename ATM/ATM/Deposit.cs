@@ -40,7 +40,22 @@ namespace ATM
 
         private void deposit__Click(object sender, EventArgs e)
         {
-
+            Console.WriteLine("Depositing : " + this.textBox1.Text);
+            String amount = this.textBox1.Text;
+            int val = 0;
+            bool result = int.TryParse(amount, out val);
+            if (result)
+            {
+                myATM.depositFunds(Int32.Parse(amount));
+                Console.WriteLine(myATM.getCurrentUserBalance());
+                TaskPage tp = new TaskPage(myATM);
+                this.Hide();
+                tp.Show();
+            } else
+            {
+                MessageBox.Show("Invalid Deposit Amount", "Invalid Deposit Amount", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

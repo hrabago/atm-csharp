@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ATM_Object.cs" />
+    <Compile Include="Database.cs" />
     <Compile Include="Deposit.cs">
       <SubType>Form</SubType>
     </Compile>

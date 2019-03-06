@@ -51,7 +51,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(142, 20);
             this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "PIN";
+            // this.textBox3.Text = "PIN;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // login
