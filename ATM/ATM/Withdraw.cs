@@ -30,10 +30,6 @@ namespace ATM
 
         private void withdraw__Click(object sender, EventArgs e)
         {
-            VanishingScreen vs = new VanishingScreen();
-            
-            vs.Show();
-            this.Close();
         }
 
         // Withdraw 20 quick button
@@ -44,11 +40,12 @@ namespace ATM
             int currentBalance = myATM.getCurrentUserBalance();
             if (currentBalance >= amount)
             {
+                int lastBal = myATM.getCurrentUserBalance();
                 myATM.withdrawFunds(amount);
                 Console.WriteLine(myATM.getCurrentUserBalance());
-                TaskPage tp = new TaskPage(myATM);
+                VanishingScreen vs = new VanishingScreen(lastBal, myATM);
                 this.Hide();
-                tp.Show();
+                vs.Show();
             }
             else
             {
@@ -65,11 +62,12 @@ namespace ATM
             int currentBalance = myATM.getCurrentUserBalance();
             if (currentBalance >= amount)
             {
+                int lastBal = myATM.getCurrentUserBalance();
                 myATM.withdrawFunds(amount);
                 Console.WriteLine(myATM.getCurrentUserBalance());
-                TaskPage tp = new TaskPage(myATM);
+                VanishingScreen vs = new VanishingScreen(lastBal, myATM);
                 this.Hide();
-                tp.Show();
+                vs.Show();
             }
             else
             {
@@ -86,11 +84,12 @@ namespace ATM
             int currentBalance = myATM.getCurrentUserBalance();
             if (currentBalance >= amount)
             {
+                int lastBal = myATM.getCurrentUserBalance();
                 myATM.withdrawFunds(amount);
                 Console.WriteLine(myATM.getCurrentUserBalance());
-                TaskPage tp = new TaskPage(myATM);
+                VanishingScreen vs = new VanishingScreen(lastBal, myATM);
                 this.Hide();
-                tp.Show();
+                vs.Show();
             }
             else
             {
@@ -107,11 +106,12 @@ namespace ATM
             int currentBalance = myATM.getCurrentUserBalance();
             if (currentBalance >= amount)
             {
+                int lastBal = myATM.getCurrentUserBalance();
                 myATM.withdrawFunds(amount);
                 Console.WriteLine(myATM.getCurrentUserBalance());
-                TaskPage tp = new TaskPage(myATM);
+                VanishingScreen vs = new VanishingScreen(lastBal, myATM);
                 this.Hide();
-                tp.Show();
+                vs.Show();
             }
             else
             {
@@ -128,11 +128,12 @@ namespace ATM
             int currentBalance = myATM.getCurrentUserBalance();
             if (currentBalance >= amount)
             {
+                int lastBal = myATM.getCurrentUserBalance();
                 myATM.withdrawFunds(amount);
                 Console.WriteLine(myATM.getCurrentUserBalance());
-                TaskPage tp = new TaskPage(myATM);
+                VanishingScreen vs = new VanishingScreen(lastBal, myATM);
                 this.Hide();
-                tp.Show();
+                vs.Show();
             }
             else
             {
@@ -144,7 +145,9 @@ namespace ATM
         // Withdraw Custom Amount
         private void button3_Click(object sender, EventArgs e)
         {
-
+            CustomWithdraw vs = new CustomWithdraw(myATM);
+            vs.Show();
+            this.Close();
         }
 
         private void Withdraw_Load(object sender, EventArgs e)

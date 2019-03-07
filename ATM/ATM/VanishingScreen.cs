@@ -12,9 +12,15 @@ namespace ATM
 {
     public partial class VanishingScreen : Form
     {
-        public VanishingScreen()
+        ATM_Object myATM;
+        int prevBal;
+        public VanishingScreen(int lastBal, ATM_Object theATM)
         {
             InitializeComponent();
+            myATM = theATM;
+            prevBal = lastBal;
+            this.previous_balance.Text = lastBal.ToString();
+            this.current_balance.Text = theATM.getCurrentUserBalance().ToString();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -24,9 +30,15 @@ namespace ATM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TaskPage tp = new TaskPage();
+            TaskPage tp = new TaskPage(myATM);
+            this.Hide();
             tp.Show();
             
+        }
+
+        private void VanishingScreen_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,11 +46,12 @@ namespace ATM
             bool result = int.TryParse(amount, out val);
             if (result)
             {
+                int prevBal = myATM.getCurrentUserBalance();
                 myATM.depositFunds(Int32.Parse(amount));
                 Console.WriteLine(myATM.getCurrentUserBalance());
-                TaskPage tp = new TaskPage(myATM);
+                VanishingScreen vs = new VanishingScreen(prevBal, myATM);
                 this.Hide();
-                tp.Show();
+                vs.Show();
             } else
             {
                 MessageBox.Show("Invalid Deposit Amount", "Invalid Deposit Amount", MessageBoxButtons.OK, MessageBoxIcon.Error);

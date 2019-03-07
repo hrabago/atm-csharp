@@ -52,5 +52,13 @@ namespace ATM
             dp.Show();
             this.Close();
         }
+
+        private void logout_Click(object sender, EventArgs e)
+        {
+            myATM.logout();
+            Welcome wel = new Welcome();
+            wel.Show();
+            this.Close();
+        }
     }
 }

@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 
 namespace ATM
 {
+    // Entire Database was written by Maddy
     public class Database
     {
 
@@ -80,30 +81,27 @@ namespace ATM
             return bal;
         }
 
-        public void UpdateBalance(string filepath, string username, string password, float balance)
+        public void UpdateBalance(string username, string password, float balance)
         {
 
-
+            var filepath = "./../../atm_database.txt";
             using (StreamReader sr = new StreamReader(filepath))
             {
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] data = line.Split(splitWith);
+                    string[] data = line.Split(',');
                     if (data[0] == username)
                     {
-                        if (data[1] == GetStringSha256Hash(password))
+                        if (data[1] == password)
                         {
-                            data[3] = balance.ToString();
-                        }
-                        else
-                        {
-                            Console.WriteLine("wrong password");
+                            data[2] = balance.ToString();
+                            return;
                         }
                     }
-                    Console.WriteLine("username does not exist");
                 }
 
             }
+            return;
         }
 
         public static void AddNewUser(string username, string password, int balance)

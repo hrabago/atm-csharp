@@ -101,6 +101,7 @@
             this.Controls.Add(this.label1);
             this.Name = "VanishingScreen";
             this.Text = "VanishingScreen";
+            this.Load += new System.EventHandler(this.VanishingScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

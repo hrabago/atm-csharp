@@ -24,7 +24,7 @@ namespace ATM
             InitializeComponent();
             myATM = theATM;
             balance = myATM.getCurrentUserBalance();
-            this.textBox1.Text = balance.ToString();
+            this.label2.Text = balance.ToString();
 
 
             //   Text = balance.ToString();

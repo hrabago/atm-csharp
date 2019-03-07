@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowBalance));
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.back = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,6 +44,17 @@
             this.label1.Size = new System.Drawing.Size(337, 37);
             this.label1.TabIndex = 0;
             this.label1.Text = "ACCOUNT BALANCE";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.SeaShell;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(332, 168);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(62, 33);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "test";
             // 
             // textBox1
             // 
@@ -74,8 +86,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.back);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
             this.Name = "ShowBalance";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.ShowBalance_Load);
@@ -87,6 +99,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button back;
     }

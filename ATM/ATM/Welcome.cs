@@ -41,7 +41,7 @@ namespace ATM
             if (myATM.login(this.textBox2.Text, this.textBox3.Text))
             {
                 TaskPage tp = new TaskPage(myATM);
-                //this.Hide();
+                this.Hide();
                 tp.Show();
             } else
             {
