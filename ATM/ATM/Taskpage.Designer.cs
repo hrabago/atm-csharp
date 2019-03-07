@@ -34,6 +34,7 @@
             this.viewBalance = new System.Windows.Forms.Button();
             this.withdraw = new System.Windows.Forms.Button();
             this.depositFunds = new System.Windows.Forms.Button();
+            this.logout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -89,6 +90,17 @@
             this.depositFunds.UseVisualStyleBackColor = false;
             this.depositFunds.Click += new System.EventHandler(this.depositFunds_Click);
             // 
+            // logout
+            // 
+            this.logout.BackColor = System.Drawing.Color.Gold;
+            this.logout.Location = new System.Drawing.Point(580, 349);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(84, 35);
+            this.logout.TabIndex = 5;
+            this.logout.Text = "Logout";
+            this.logout.UseVisualStyleBackColor = false;
+            this.logout.Click += new System.EventHandler(this.logout_Click);
+            // 
             // TaskPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,6 +108,7 @@
             this.BackColor = System.Drawing.Color.Maroon;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.logout);
             this.Controls.Add(this.depositFunds);
             this.Controls.Add(this.withdraw);
             this.Controls.Add(this.viewBalance);
@@ -116,5 +129,6 @@
         private System.Windows.Forms.Button viewBalance;
         private System.Windows.Forms.Button withdraw;
         private System.Windows.Forms.Button depositFunds;
+        private System.Windows.Forms.Button logout;
     }
 }

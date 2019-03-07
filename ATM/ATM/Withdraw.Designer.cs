@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
-            this.withdraw_ = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -65,24 +64,13 @@
             // back
             // 
             this.back.BackColor = System.Drawing.Color.Gold;
-            this.back.Location = new System.Drawing.Point(219, 347);
+            this.back.Location = new System.Drawing.Point(331, 337);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(109, 44);
             this.back.TabIndex = 7;
             this.back.Text = "BACK";
             this.back.UseVisualStyleBackColor = false;
             this.back.Click += new System.EventHandler(this.back_Click);
-            // 
-            // withdraw_
-            // 
-            this.withdraw_.BackColor = System.Drawing.Color.Gold;
-            this.withdraw_.Location = new System.Drawing.Point(380, 347);
-            this.withdraw_.Name = "withdraw_";
-            this.withdraw_.Size = new System.Drawing.Size(109, 44);
-            this.withdraw_.TabIndex = 8;
-            this.withdraw_.Text = "WITHDRAW";
-            this.withdraw_.UseVisualStyleBackColor = false;
-            this.withdraw_.Click += new System.EventHandler(this.withdraw__Click);
             // 
             // button9
             // 
@@ -156,7 +144,6 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.withdraw_);
             this.Controls.Add(this.back);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -173,7 +160,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button back;
-        private System.Windows.Forms.Button withdraw_;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

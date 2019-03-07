@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ATM_Object.cs" />
+    <Compile Include="CustomWithdraw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomWithdraw.Designer.cs">
+      <DependentUpon>CustomWithdraw.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database.cs" />
     <Compile Include="Deposit.cs">
       <SubType>Form</SubType>
@@ -87,6 +93,9 @@
     <Compile Include="Withdraw.Designer.cs">
       <DependentUpon>Withdraw.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="CustomWithdraw.resx">
+      <DependentUpon>CustomWithdraw.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Deposit.resx">
       <DependentUpon>Deposit.cs</DependentUpon>
     </EmbeddedResource>

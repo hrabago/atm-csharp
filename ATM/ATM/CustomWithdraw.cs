@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ATM
 {
-    public partial class VanishingScreen : Form
+    public partial class CustomWithdraw : Form
     {
-        public VanishingScreen()
+        public CustomWithdraw()
         {
             InitializeComponent();
         }
@@ -24,9 +24,7 @@ namespace ATM
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TaskPage tp = new TaskPage();
-            tp.Show();
-            
+
         }
     }
 }
